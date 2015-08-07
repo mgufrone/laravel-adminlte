@@ -61,7 +61,7 @@ class MenuItem {
                 ]
             ]
         );
-        $content .= ' ' . $this->menuItem->getLabel();
+        $content .= ' <span>' . $this->menuItem->getLabel().'</span>';
         return $this->htmlBuilder->tag('a', ['href' => $this->menuItem->getUrl()], $content);
     }
 
